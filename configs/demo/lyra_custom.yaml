@@ -24,6 +24,9 @@ target_index_manual: [0, 60, 120]
 # target_index_manual_stride: 1
 # target_index_manual_start_idx: 0
 # target_index_manual_num_idx: 121
+save_gaussians: true
+# Output 3D gaussians using the original 3DGS export script
+save_gaussians_orig: true
 
 # Update path to where the static Lyra checkpoint is downloaded
 ckpt_path: checkpoints/Lyra/lyra_dynamic.pt
