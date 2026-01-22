@@ -1,13 +1,6 @@
-config_path: outputs/training/cosmos3dgs/config.yaml
 out_dir_inference: outputs/inference
 dataset_name: dl3dv
 
-# If not checkpoint name given, take the latest
-ckpt_path: null
-ckpt_name: null
-
-# Set view indices manually
-static_view_indices_fixed: null
 
 # Only render a stride of the cameras from the 3DGS
 target_index_subsample: 1
@@ -16,10 +9,8 @@ target_index_subsample: 1
 do_eval: false
 
 # Don't read and write the depth
-use_depth: false
+use_depth: true
 
-# Overwrite number of test images
-num_test_images: null
 
 # Video output fps
 out_fps: 15
