@@ -146,13 +146,17 @@ dataset_registry['lyra_dynamic_demo_generated'] = {
 dataset_registry['dl3dv'] = {
     'cls': RadymWrapper, 
     'kwargs': {
-        "root_path": "/content/vipe_output",
-        "is_static": True,
+        "root_path": "assets/demo/dynamic/diffusion_output_generated",
+        "is_static": False,
         "is_multi_view": True,
-        "has_latents": False,
-        "is_generated_cosmos_latent": False,
+        "has_latents": True,
+        "is_generated_cosmos_latent": True,
         "sampling_buckets": [['0'], ['1'], ['2'], ['3'], ['4'], ['5']],
         "start_view_idx": 0,
+        "end_view_idx": 5,
+        "start_view_target_idx": 6,
+        "end_view_target_idx": 11,
+        
     },
     'scene_scale': 1.,
     'max_gap': 121,
